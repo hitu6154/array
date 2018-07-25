@@ -1,0 +1,22 @@
+package inner;
+
+public class myinner 
+{
+private int data=140;
+void display()
+	{
+		class LocalInner
+		{
+			void msg()
+			{
+				System.out.println("the output localnested  "+data);
+			}
+		}
+		LocalInner local = new LocalInner();
+		local.msg();
+}
+public static void main(String args[]){
+	myinner obj = new myinner();
+	obj.display();
+}
+}
