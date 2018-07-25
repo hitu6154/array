@@ -1,0 +1,22 @@
+package inner;
+
+
+abstract class flyable
+	{
+		abstract void fly();
+	}
+public class anon
+	{
+		public static void main(String args[])
+		{
+			flyable f = new flyable() 
+			{
+				void fly() 
+				{
+					System.out.println("gaurav can fly");
+				}
+			};
+			f.fly();
+		}
+	}
+
