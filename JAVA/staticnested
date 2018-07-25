@@ -1,0 +1,16 @@
+package inner;
+
+public class staticoutr {
+		static int data=10;
+		static class inner
+		{
+			void display()
+			{
+				System.out.println("the output of staticouter  "+data);
+			}
+		}
+public static void main(String args[]){
+	staticoutr.inner obj = new staticoutr.inner();
+	obj.display();
+}
+}
